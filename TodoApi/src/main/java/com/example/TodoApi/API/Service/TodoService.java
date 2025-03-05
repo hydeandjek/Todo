@@ -32,7 +32,6 @@ public class TodoService {
         List<TodoApi> entityList = todoRepostitory.findAll();
 
         List<TodoDetailResponseDTO> dtoList = entityList.stream()
-//                .map(entity -> new TodoDetailResponseDTO(entity))
                 .map(TodoDetailResponseDTO::new)
                 .collect(Collectors.toList());
 

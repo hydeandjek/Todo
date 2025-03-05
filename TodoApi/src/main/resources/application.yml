@@ -1,13 +1,13 @@
 #spring.application.name=TodoApi
 
 server:
-  port:8181
+  port:8080
 
 spring:
   application:
     name: TodoApi
-  datasourece:
-    url: jdbc:mysql://localhost:3306/jpa?serverTimezone=Asia/Seoul
+  datasource:
+    url: jdbc:mysql://localhost:3306/sys
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver

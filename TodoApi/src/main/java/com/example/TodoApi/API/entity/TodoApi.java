@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter @Setter @ToString
@@ -26,5 +27,8 @@ public class TodoApi {
 
     @CreationTimestamp
     private LocalDateTime createDate;
+
+//    @Column(name = "todo_date")
+//    private LocalDate todoDate;
 
 }

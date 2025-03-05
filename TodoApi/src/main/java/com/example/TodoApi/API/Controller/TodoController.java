@@ -37,7 +37,11 @@ public class TodoController {
                     .ok()
                     .body(responseDTO);
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            return ResponseEntity
+                    .internalServerError()
+                    .body(TodoListResponseDTO.builder()
+                            .error(e.getMessage())
+                            .build());
         }
     }
     //입력값 검증
@@ -53,6 +57,5 @@ public class TodoController {
         }
         return null;
     }
-
 
 }
