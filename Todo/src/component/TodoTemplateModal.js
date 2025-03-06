@@ -8,18 +8,7 @@ import '../scss/Modal.scss'; // 모달용 스타일 파일 (아래 예시 참고
 const TodoTemplateModal = () => {
   const API_BASE_URL = 'http://localhost:8080/api/todos';
 
-  const [todos, setTodos] = useState([
-    {
-      id: 1,
-      title: '머시깽',
-      done: false,
-    },
-    {
-      id: 2,
-      title: '머시깽',
-      done: true,
-    }
-  ]);
+  const [todos, setTodos] = useState([]);
 
   // 모달 열림 상태 관리
   const [modalOpen, setModalOpen] = useState(false);
@@ -79,7 +68,7 @@ const TodoTemplateModal = () => {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-modal-btn" onClick={closeModal}>
-              X
+            
             </button>
             <div className="TodoTemplate">
               <TodoHeader count={countRestTodo} />

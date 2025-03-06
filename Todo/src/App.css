@@ -1,0 +1,18 @@
+.app-container {
+  display: flex;
+  background-color: #f0f0f0;
+  min-height: 100vh; /* 최소 높이를 100vh로 설정 */
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: flex-start; /* 사이드바를 왼쪽에 정렬 (TodoTemplate가 오른쪽에 위치하도록) */
+  width: 100%; /* 가로 폭을 100%로 설정 */
+}
+
+body, html {
+  margin: 0; /* body와 html의 기본 margin 제거 */
+  padding: 0; /* body와 html의 기본 padding 제거 */
+  height: 100%; /* body와 html의 높이를 100%로 설정 */
+}
+
+#root {
+  min-height: 100vh;
+}

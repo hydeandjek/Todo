@@ -1,0 +1,76 @@
+.day-picker {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 280px;
+  font-size: 16px;
+  position: relative;
+
+  .rdp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .rdp-day {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    &.rdp-day-selected {
+      background-color: #007bff;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    &.rdp-day-disabled {
+      background-color: #f0f0f0;
+      color: #ccc;
+      pointer-events: none;
+    }
+  }
+
+  .rdp-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .rdp-prev,
+    .rdp-next {
+      color: #007bff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .rdp-month {
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+  }
+
+  .rdp-footer {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #777;
+
+    &.rdp-footer-selected {
+      color: #007bff;
+    }
+  }
+}

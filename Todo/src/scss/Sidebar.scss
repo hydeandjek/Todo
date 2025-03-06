@@ -1,0 +1,53 @@
+.sidebar {
+    width: 350px;
+    background-color: #f7f8fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* 변경 */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+  }
+  
+  .menu {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .menu-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    text-align: center;
+  
+    &:hover {
+      background-color: #edf2f7;
+    }
+  
+    &.active {
+      background-color: #e2e8f0;
+      font-weight: 600;
+      color: #2d3748;
+    }
+  }
+  
+  .react-calendar {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-top: 20px; 삭제 */
+  }

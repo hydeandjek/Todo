@@ -23,10 +23,15 @@ public class TodoApi {
     @Column(nullable = false, length = 30)
     private String title;
 
+    @Column(nullable = false, columnDefinition = "BOOLEAN")
     private boolean done;
 
     @CreationTimestamp
     private LocalDateTime createDate;
+
+    @Column(name = "todo_date")
+    private LocalDate todoDate;
+
 
 //    @Column(name = "todo_date")
 //    private LocalDate todoDate;
