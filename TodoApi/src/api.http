@@ -1,0 +1,40 @@
+
+### 1. 모든 Todo 조회
+GET http://localhost:8080/api/todos
+Accept: application/json
+
+### 2. 특정 날짜의 Todo 조회
+GET http://localhost:8080/api/todos/date/2025-03-07
+Accept: application/json
+
+### 3. 특정 ID의 Todo 조회
+GET http://localhost:8080/api/todos/fa93141c-50ed-4886-937c-6785f852b5aa
+Accept: application/json
+
+### 4. 새로운 Todo 추가
+POST http://localhost:8080/api/todos
+Content-Type: application/json
+
+{
+  "title": "새로운 할 일",
+  "done": false,
+  "todoDate": "2025-03-07"
+}
+
+### 5. Todo 완료 상태 변경 (업데이트)
+PUT http://localhost:8080/api/todos/fa93141c-50ed-4886-937c-6785f852b5aa
+Content-Type: application/json
+
+  {
+    "title": "퇴근하기",
+    "done": true,
+    "createDate": "2025-03-07T10:36:24.021483",
+    "todoDate": "2025-03-14",
+    "todoId": "fa93141c-50ed-4886-937c-6785f852b5aa"
+  }
+
+### 6. 특정 ID의 Todo 삭제
+DELETE http://localhost:8080/api/todos/fa93141c-50ed-4886-937c-6785f852b5aa
+
+
+
