@@ -141,7 +141,7 @@
     *   `id` (required, string): 조회할 Todo 항목의 ID.
 
 *   **Request Body:** 없음
-*   **Response Body (Success - 200 OK):**
+*   **Response Body**
 
     ```json
     {
@@ -243,11 +243,11 @@
     *   `title` (required, string): 새로운 Todo 항목의 제목.
     *   `todoDate` (required, string, format: YYYY-MM-DD): 새로운 Todo 항목의 날짜.
 
-*   **Response Headers (Success - 201 Created):**
+*   **Response Headers**
 
     *   `Location`: 생성된 Todo 항목의 URL (`/api/todos/{id}`).
 
-*   **Response Body (Success - 201 Created):** (위에 조회 성공시 Response Body와 동일하며, 새로운 ID가 할당됩니다.)
+*   **Response Body** (위에 조회 성공시 Response Body와 동일하며, 새로운 ID가 할당됩니다.)
 
     ```json
     {
@@ -266,7 +266,7 @@
 *   **Path Parameter:**
     *   `todoDate` (required, string, format: YYYY-MM-DD): 조회할 Todo 항목의 날짜.
 
-*   **Response Body (Success - 200 OK):** (위에 모든 Todo 조회 성공시 Response Body와 동일)
+*   **Response Body** (위에 모든 Todo 조회 성공시 Response Body와 동일)
 
     ```json
     [
